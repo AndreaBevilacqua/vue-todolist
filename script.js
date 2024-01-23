@@ -36,6 +36,10 @@ const app = createApp({
             this.tasks.forEach(task => {
                 task.done = value;
             })
+        },
+
+        deleteTasks() {
+            this.tasks = [];
         }
     }
 });
