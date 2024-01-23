@@ -30,6 +30,12 @@ const app = createApp({
                     task.done = !task.done
                 }
             })
+        },
+
+        setAll (value) {
+            this.tasks.forEach(task => {
+                task.done = value;
+            })
         }
     }
 });
