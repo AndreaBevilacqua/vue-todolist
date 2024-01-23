@@ -27,8 +27,8 @@
 
             <!-- List -->
             <ul class="list-group mt-5">
-                <li v-for="task in tasks" class="list-group-item">{{ task.text }}
-                    <button type="button" class="btn-close"></button>
+                <li v-for="task in tasks" class="list-group-item d-flex justify-content-between">{{ task.text }}
+                    <button type="button" class="btn-close" v-on:click="deleteTask(task.id)"></button>
                 </li>
               </ul>
         </div>
