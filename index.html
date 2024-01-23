@@ -38,8 +38,8 @@
                 </li>
                 <li class="list-group-item">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Aggiugi task" v-model.trim="newTaskInput">
-                        <button class="btn btn-outline-success" type="button" @click="addTask" @keyup.enter="addTask">
+                        <input type="text" class="form-control" placeholder="Aggiugi task" v-model.trim="newTaskInput" @keyup.enter="addTask">
+                        <button class="btn btn-outline-success" type="button" @click="addTask">
                         <i class="fas fa-plus"></i>
                         </button>
                     </div>
