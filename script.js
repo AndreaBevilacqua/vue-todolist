@@ -3,6 +3,8 @@ console.log('vue ok', Vue);
 const {createApp} = Vue;
 const app = createApp({
     name: 'TodoList',
-    data: () => ({})
+    data: () => ({
+        tasks,
+    })
 })
 app.mount('#root');
