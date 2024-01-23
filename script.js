@@ -22,6 +22,14 @@ const app = createApp({
             const newTask = { id: 5, done: false, text: this.newTaskInput}
             this.tasks.push(newTask);
             this.newTaskInput = '';
+        },
+
+        isTaskDone(id) {
+            this.tasks.forEach(task => {
+                if (id === task.id) {
+                    task.done = !task.done
+                }
+            })
         }
     }
 });
